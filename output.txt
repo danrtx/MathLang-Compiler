@@ -1,0 +1,2 @@
+=== COMPILACION FALLIDA ===
+[ERROR LEXICO] Linea 1: Caracter no reconocido: '>'

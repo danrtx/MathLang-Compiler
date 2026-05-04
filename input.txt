@@ -1,0 +1,28 @@
+cat > input.txt << 'EOF'
+// MathLang - Programa de entrada principal
+// Ejemplo completo del lenguaje
+
+func cuadrado(x) {
+    return x * x;
+}
+
+func areaCirculo(r) {
+    return 3.14159 * r * r;
+}
+
+func hipotenusa(a, b) {
+    return cuadrado(a) + cuadrado(b);
+}
+
+a = 5;
+b = 3;
+c = cuadrado(a) + b;
+print(c);
+
+radio = 7;
+area = areaCirculo(radio);
+print(area);
+
+hip = hipotenusa(3, 4);
+print(hip);
+EOF
