@@ -1,4 +1,4 @@
-// Test 04: Funciones que se llaman entre sí
+// Test 04: Funciones que se llaman entre si
 func cuadrado(x) {
     return x * x;
 }

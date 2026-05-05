@@ -1,4 +1,4 @@
-// Error 08: [SEMÁNTICO] Faltan argumentos
+// Error 08: Pocos argumentos
 func mult(a, b) {
     return a * b;
 }

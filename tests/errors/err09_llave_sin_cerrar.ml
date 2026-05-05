@@ -1,4 +1,4 @@
-// Error 09: [SINTÁCTICO] Llave de cierre faltante
+// Error 09: Llave sin cerrar
 func incompleta(x) {
     return x * 2;
 

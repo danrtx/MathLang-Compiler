@@ -1,3 +1,3 @@
-// Error 05: [LÉXICO] Carácter no reconocido
+// Error 05: Caracter ilegal
 a = 5@3;
 print(a);

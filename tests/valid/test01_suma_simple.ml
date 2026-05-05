@@ -1,4 +1,4 @@
-// Test 01: Suma simple de dos variables
+// Test 01: Suma simple
 a = 10;
 b = 20;
 c = a + b;

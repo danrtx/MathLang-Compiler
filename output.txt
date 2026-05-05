@@ -1,2 +1,164 @@
-=== COMPILACION FALLIDA ===
-[ERROR LEXICO] Linea 1: Caracter no reconocido: '>'
+=== COMPILACION EXITOSA ===
+Fuente: input.txt
+Salida: output_program.py
+
+=== TOKENS ===
+  FUNC            -> 'func'
+  ID              -> 'cuadrado'
+  LPAREN          -> '('
+  ID              -> 'x'
+  RPAREN          -> ')'
+  LBRACE          -> '{'
+  RETURN          -> 'return'
+  ID              -> 'x'
+  STAR            -> '*'
+  ID              -> 'x'
+  SEMICOLON       -> ';'
+  RBRACE          -> '}'
+  FUNC            -> 'func'
+  ID              -> 'areaCirculo'
+  LPAREN          -> '('
+  ID              -> 'r'
+  RPAREN          -> ')'
+  LBRACE          -> '{'
+  RETURN          -> 'return'
+  FLOAT           -> '3.14159'
+  STAR            -> '*'
+  ID              -> 'r'
+  STAR            -> '*'
+  ID              -> 'r'
+  SEMICOLON       -> ';'
+  RBRACE          -> '}'
+  FUNC            -> 'func'
+  ID              -> 'hipotenusa'
+  LPAREN          -> '('
+  ID              -> 'a'
+  COMMA           -> ','
+  ID              -> 'b'
+  RPAREN          -> ')'
+  LBRACE          -> '{'
+  RETURN          -> 'return'
+  ID              -> 'cuadrado'
+  LPAREN          -> '('
+  ID              -> 'a'
+  RPAREN          -> ')'
+  PLUS            -> '+'
+  ID              -> 'cuadrado'
+  LPAREN          -> '('
+  ID              -> 'b'
+  RPAREN          -> ')'
+  SEMICOLON       -> ';'
+  RBRACE          -> '}'
+  ID              -> 'a'
+  ASSIGN          -> '='
+  NUMBER          -> '5'
+  SEMICOLON       -> ';'
+  ID              -> 'b'
+  ASSIGN          -> '='
+  NUMBER          -> '3'
+  SEMICOLON       -> ';'
+  ID              -> 'c'
+  ASSIGN          -> '='
+  ID              -> 'cuadrado'
+  LPAREN          -> '('
+  ID              -> 'a'
+  RPAREN          -> ')'
+  PLUS            -> '+'
+  ID              -> 'b'
+  SEMICOLON       -> ';'
+  PRINT           -> 'print'
+  LPAREN          -> '('
+  ID              -> 'c'
+  RPAREN          -> ')'
+  SEMICOLON       -> ';'
+  ID              -> 'radio'
+  ASSIGN          -> '='
+  NUMBER          -> '7'
+  SEMICOLON       -> ';'
+  ID              -> 'area'
+  ASSIGN          -> '='
+  ID              -> 'areaCirculo'
+  LPAREN          -> '('
+  ID              -> 'radio'
+  RPAREN          -> ')'
+  SEMICOLON       -> ';'
+  PRINT           -> 'print'
+  LPAREN          -> '('
+  ID              -> 'area'
+  RPAREN          -> ')'
+  SEMICOLON       -> ';'
+  ID              -> 'hip'
+  ASSIGN          -> '='
+  ID              -> 'hipotenusa'
+  LPAREN          -> '('
+  NUMBER          -> '3'
+  COMMA           -> ','
+  NUMBER          -> '4'
+  RPAREN          -> ')'
+  SEMICOLON       -> ';'
+  PRINT           -> 'print'
+  LPAREN          -> '('
+  ID              -> 'hip'
+  RPAREN          -> ')'
+  SEMICOLON       -> ';'
+  ENDOFTOKEN      -> ''
+
+=== TAC ===
+FUNC_BEGIN cuadrado(x)
+  _t0 = x * x
+  RETURN _t0
+FUNC_END cuadrado
+FUNC_BEGIN areaCirculo(r)
+  _t1 = 3.14159 * r
+  _t2 = _t1 * r
+  RETURN _t2
+FUNC_END areaCirculo
+FUNC_BEGIN hipotenusa(a, b)
+  PARAM a
+  _t3 = CALL cuadrado(a)
+  PARAM b
+  _t4 = CALL cuadrado(b)
+  _t5 = _t3 + _t4
+  RETURN _t5
+FUNC_END hipotenusa
+  a = 5
+  b = 3
+  PARAM a
+  _t6 = CALL cuadrado(a)
+  _t7 = _t6 + b
+  c = _t7
+  PRINT c
+  radio = 7
+  PARAM radio
+  _t8 = CALL areaCirculo(radio)
+  area = _t8
+  PRINT area
+  PARAM 3
+  PARAM 4
+  _t9 = CALL hipotenusa(3, 4)
+  hip = _t9
+  PRINT hip
+
+=== CODIGO PYTHON ===
+# Codigo Python generado por MathLang Compiler
+# Universidad Cooperativa de Colombia - Compiladores
+import math
+
+def cuadrado(x):
+    return (x * x)
+
+def areaCirculo(r):
+    return ((3.14159 * r) * r)
+
+def hipotenusa(a, b):
+    return (cuadrado(a) + cuadrado(b))
+
+a = 5
+b = 3
+c = (cuadrado(a) + b)
+print(c)
+radio = 7
+area = areaCirculo(radio)
+print(area)
+hip = hipotenusa(3, 4)
+print(hip)

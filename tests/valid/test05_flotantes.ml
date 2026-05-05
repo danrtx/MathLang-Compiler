@@ -1,4 +1,4 @@
-// Test 05: Operaciones con flotantes
+// Test 05: Flotantes
 pi = 3.14159;
 radio = 5.0;
 area = pi * radio * radio;

@@ -1,4 +1,4 @@
-// Test 10: División y mix de operaciones
+// Test 10: Division y mix
 func calcular(n) {
     return n * 2 + 10 / 2;
 }

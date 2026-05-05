@@ -1,4 +1,3 @@
-cat > input.txt << 'EOF'
 // MathLang - Programa de entrada principal
 // Ejemplo completo del lenguaje
 
@@ -25,4 +24,3 @@ print(area);
 
 hip = hipotenusa(3, 4);
 print(hip);
-EOF

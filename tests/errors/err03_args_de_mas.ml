@@ -1,4 +1,4 @@
-// Error 03: [SEMÁNTICO] Demasiados argumentos
+// Error 03: Demasiados argumentos
 func suma(a, b) {
     return a + b;
 }

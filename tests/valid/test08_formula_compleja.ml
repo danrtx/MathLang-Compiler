@@ -1,4 +1,4 @@
-// Test 08: Fórmula matemática compleja
+// Test 08: Formula compleja
 func formula(a, b, c) {
     return a * a - 2 * b + c;
 }

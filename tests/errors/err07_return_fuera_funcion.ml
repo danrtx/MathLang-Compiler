@@ -1,3 +1,3 @@
-// Error 07: [SEMÁNTICO] return fuera de función
+// Error 07: Return fuera de funcion
 a = 5;
 return a;

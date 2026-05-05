@@ -1,4 +1,4 @@
-// Error 10: [SEMÁNTICO] Variable no declarada dentro de función
+// Error 10: Variable no declarada en funcion
 func calcular(n) {
     resultado = n + extra;
     return resultado;

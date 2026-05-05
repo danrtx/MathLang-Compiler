@@ -1,4 +1,4 @@
-// Test 07: Función con tres parámetros
+// Test 07: Tres parametros
 func promedio3(a, b, c) {
     return (a + b + c) / 3;
 }

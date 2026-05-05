@@ -1,4 +1,4 @@
-// Test 02: Función básica con un parámetro
+// Test 02: Funcion basica
 func doble(x) {
     return x * 2;
 }
